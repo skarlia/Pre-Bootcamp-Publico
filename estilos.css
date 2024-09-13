@@ -1,62 +1,50 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fce4ec; 
-    margin: 0; /* Elimina los márgenes predeterminados del navegador */
-    padding: 0; /* Elimina el relleno predeterminado del navegador */
-    display: flex; /* Flexbox para alinear contenido */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    flex-direction: column; /* Organiza los elementos en columna */
-    height: 100vh; /* Altura de la página completa */
+/* Estilo para el contenedor principal, centrado y de fondo */
+.container {
+    width: 950px; /* Ancho del contenedor principal */
+    background-color: #eaeaea; /* Color de fondo gris claro */
+    margin: auto; /* Centrado horizontalmente */
+    display: grid; /* Usar CSS Grid para definir la estructura */
+    grid-template-columns: 700px 225px; /* Dos columnas: una para el contenido principal y otra para la barra lateral */
+    grid-template-rows: 150px auto; /* Dos filas: una para el banner superior y otra para el contenido */
+    gap: 10px; /* Espacio entre las filas y columnas */
 }
 
-h1 {
-    color: #ff69b4; 
-    text-align: center; /* Centra el texto del título */
-    margin-bottom: 20px; /* Margen inferior para espacio entre el título y el formulario */
+/* Estilo para el banner superior */
+.top-nav {
+    height: 150px; /* Altura fija para el banner */
+    background-color: #ffcc00; /* Color amarillo para el banner */
+    grid-column: 1 / span 2; /* El banner ocupa ambas columnas */
 }
 
-form { /* formulario */
-    background-color: #f8bbd0; 
-    padding: 20px; 
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
-    width: 100%; /* Ancho completo del formulario */
-    max-width: 400px; /* Ancho máximo del formulario */
+/* Estilo para la barra lateral */
+.side-nav {
+    height: auto; /* Altura automática para ocupar todo el espacio disponible */
+    width: 225px; /* Ancho fijo para la barra lateral */
+    background-color: #66ccff; /* Color celeste para la barra lateral */
+    grid-row: 2; /* Ubicada en la segunda fila */
 }
 
-label {
-    display: inline-block; /* Coloca los labels de forma horizontal */
-    width: 150px; /* Ancho fijo para alinear el texto de las etiquetas */
-    margin-bottom: 10px; /* espacio entre elementos */
-    font-size: 16px;
-    color: #333; /* Color de texto gris oscuro */
-    text-align: left; /* Alinea el texto de la etiqueta a la izquierda */
+/* Estilo para el área principal */
+.main {
+    background-color: deeppink; /* Color rosa para el área principal */
+    display: flex; /* Usar Flexbox para organizar los cuadros dentro */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan si es necesario */
+    grid-row: 2; /* Ubicada en la segunda fila */
+    padding: 20px; /* Espacio interno alrededor del contenido */
 }
 
-textarea {
-    width: calc(100% - 160px); /* Ajusta el ancho del campo de entrada */
-    padding: 5px; 
-    margin-bottom: 10px; /* Margen inferior para espacio entre los elementos */
-    border: 1px solid #ccc; /* Borde gris claro */
-    border-radius: 4px; 
+/* Estilo para los cuadros de contenido azul */
+.sub-content {
+    height: 200px; /* Altura  */
+    width: 210px; /* Ancho  */
+    background-color: mediumblue; 
+    margin: 5px; 
 }
 
-button {
-    background-color: #ff69b4; 
-    color: white; 
-    padding: 10px 20px;
-    border: none; /* Sin bordes */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
-}
-
-button:hover {
-    background-color: #ff4081; /* Color de fondo más oscuro al pasar sobre el botón */
-}
-
-fieldset {
-    border: 2px solid #ff69b4; /* Borde rosado alrededor del formulario */
-    border-radius: 8px; /* Bordes redondeados del fieldset */
-    padding: 10px; /* Espacio interno del fieldset */
+/* Estilo para el cuadro de publicidad verde */
+#advertisement {
+    height: 130px;
+    width: 650px;
+    background-color: #33cc33; 
+    margin:10px; /* margen con medidas iguales */
 }

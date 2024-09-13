@@ -1,81 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulario de registro</title>
-        <link rel="stylesheet" href="./estilos.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Posición de práctica</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css" />
     </head>
     <body>
-        <h1 id="titulo">Formulario</h1>
-            <main>
-                <form>
-                    <fieldset> <!-- agrega un rectangulo o borde-->
-                        <legend>Registre su información</legend> <!-- para ponerle un encabezado al formulario--> 
-
-                        <div> <!-- hace un salto de linea, los deja en bloques-->
-                            <label for="Nombre"> Nombre </label> 
-                            <input type="text" id="Nombre"> <!-- dentro del input se puede agregar un value="ailyn" para que salga por defecto -->
-                        </div>
-
-                        <div>
-                            <label for="apellido"> Apellido</label> 
-                            <input type="text" id="apellido"> <!-- o para que se vea de fondo placeholder="escribe tu apellido" -->
-                        </div>
-
-                        <div>
-                            <label for="Edad"> Edad</label>
-                            <input type="number" id="edad"> 
-                        </div>
-
-                        <div>
-                            <label for="correo"> Correo </label>
-                            <input type="email" id="correo">
-                        </div>
-
-                        <div>
-                            <label for="contraseña"> Contraseña</label>
-                            <input type="password" id="contraseña"> 
-                        </div>
-
-                        <div>
-                            <label for="pais"> Pais </label>
-                            <select id="pais">
-                                <option value="-1"> Selecciona un Pais </option> <!-- -1 es para indicar de que no es un pais -->
-                                <option value="CH"> Chile </option>
-                                <option value="PE"> Peru </option>
-                                <option value="MX"> Mexico </option>
-                                <option value="CR"> Costa Rica </option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <input type="radio" id="femenino" name="genero">
-                            <label for="femenino"> Femenino </label>
-                            <input type="radio" id="masculino" name="genero">
-                            <label for="masculino"> Masculino </label>
-                            <input type="radio" id="otro" name="genero">
-                            <label for="otro"> Otro </label>
-                        </div>
-
-                        <div>
-                            <label><input type="checkbox" name="suscripcion" checked> Suscribirse al boletín informatico </label>
-                        </div>
-
-                        <div>
-                            <label><input type="checkbox" name="preferencia_comunicacion"> Acepto recibir correos personalizados </label>
-                        </div>
-
-                        <div>
-                            <h3> Dejame un comentario para saber en que mejorar </h3>
-                                <textarea></textarea>
-                        </div>
-
-                        <div>
-                            <button type="submit"> enviar informaicon </button>
-                        </div>
-                    </fieldset>
-                </form>
-            </main>
+        <div class="container">
+            <div class="top-nav"></div>
+            <div class="main">
+                <div class="sub-content"></div>
+                <div class="sub-content"></div>
+                <div class="sub-content"></div>
+                <div id="advertisement"></div>
+            </div>
+            <div class="side-nav"></div>
+        </div>
     </body>
 </html>
